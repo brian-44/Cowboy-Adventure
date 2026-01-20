@@ -26,22 +26,22 @@ PAL 0
 NAME blueprint
 
 ROOM 0
-h,h,f,h,h,e,h,h,h,g,h,h,h,h,h,h
-h,a,a,a,a,a,a,a,a,a,a,a,a,a,a,e
-h,a,0,y,y,y,y,y,y,y,y,y,y,y,a,h
-h,a,0,y,y,y,y,y,y,y,y,y,y,y,a,h
-h,a,y,y,y,y,y,y,y,y,y,y,y,y,a,h
-g,a,y,y,y,y,y,y,y,c,b,d,y,y,a,h
-h,a,y,y,y,y,y,y,y,y,y,y,y,y,a,h
-h,a,y,y,y,y,y,y,y,y,y,y,y,y,a,f
-h,a,y,y,y,y,y,y,y,y,y,y,y,y,a,h
-e,a,y,0,y,y,y,y,y,y,y,y,y,y,a,h
-h,a,y,0,y,y,y,y,y,y,y,y,y,y,a,h
-h,a,y,y,y,y,y,y,y,y,y,y,y,y,a,h
-h,a,y,y,y,y,y,y,y,y,y,y,y,y,a,g
-f,a,y,y,y,y,y,y,y,y,y,y,y,y,a,h
-h,a,a,a,a,a,a,a,i,a,a,a,a,a,a,h
-h,h,e,h,h,h,h,h,h,h,h,f,h,h,h,e
+12,12,13,12,12,e,12,12,12,14,12,12,12,12,12,12
+12,z,z,z,z,z,z,z,z,z,z,z,z,z,z,e
+12,z,0,y,11,11,y,11,11,11,y,y,y,10,z,12
+12,z,0,10,y,11,10,11,y,11,10,y,10,11,z,12
+12,z,11,11,10,y,11,y,10,y,11,10,11,11,z,12
+14,z,y,11,11,10,11,10,11,c,b,d,11,y,z,12
+12,z,10,y,11,11,y,11,11,11,y,11,y,10,z,12
+12,z,11,10,y,11,10,11,y,11,10,y,10,11,z,13
+12,z,11,11,10,y,11,y,10,y,11,10,11,11,z,12
+e,z,y,0,11,10,y,10,11,10,11,11,11,y,z,12
+12,z,y,0,11,11,10,11,11,11,y,11,y,10,z,12
+12,z,y,10,y,11,11,11,y,11,10,y,10,11,z,12
+12,z,10,11,10,y,11,y,10,y,0,10,11,11,z,14
+13,z,11,11,11,10,y,10,11,10,11,11,11,y,z,12
+12,z,z,z,z,z,z,z,i,z,z,z,z,z,z,12
+12,12,e,12,12,12,12,12,12,12,12,13,12,12,12,e
 NAME Cowboy Home
 ITM 0 6,7
 ITM 4 5,13
@@ -50,7 +50,7 @@ PAL 0
 TUNE 2
 
 ROOM 1
-h,a,y,y,y,y,y,y,y,y,y,y,y,y,a,h
+h,a,11,11,11,10,y,10,11,10,11,11,11,y,a,h
 h,a,a,a,a,a,a,a,i,a,a,a,a,a,a,h
 h,h,e,h,h,h,h,h,h,h,h,f,h,h,h,e
 h,h,h,h,g,h,h,h,h,h,h,h,h,h,h,h
@@ -67,11 +67,64 @@ h,h,h,h,h,g,h,h,h,h,h,h,h,h,h,h
 h,h,e,h,h,h,h,h,h,h,h,h,e,h,h,h
 h,f,h,h,h,h,h,h,h,e,h,h,h,h,h,g
 NAME Outside
-ITM 3 7,15
-ITM 2 8,3
-END j 7,15
+ITM 5 14,3
 PAL 0
 TUNE 3
+
+TIL 10
+11111111
+11110001
+11100001
+11000001
+11000001
+10000001
+10000001
+10000001
+NAME Floor Tile 2
+
+TIL 11
+10000001
+10000001
+10000001
+10000001
+10000001
+10000001
+10000001
+10000001
+NAME Floor Tile 3
+
+TIL 12
+11111111
+11011011
+11111111
+11111101
+01110111
+11011111
+11111011
+10111111
+NAME Sand Inverted
+
+TIL 13
+11111011
+11011111
+11111101
+11101111
+01111111
+11100011
+10000001
+10000001
+NAME Rock Inverted
+
+TIL 14
+11111110
+10111111
+11111101
+11101111
+11000111
+11000011
+01111110
+11110111
+NAME Rock 2 Inverted
 
 TIL a
 11111111
@@ -376,15 +429,36 @@ TIL w
 NAME Tilled Dirt
 
 TIL y
-00000000
-01111110
-01111110
-01111110
-01111110
-01111110
-01111110
-00000000
+10000001
+10000001
+10000001
+10000011
+10000011
+10000011
+10000111
+11111111
 NAME Floor Tile 2
+
+TIL z
+00000000
+11101111
+11101111
+00000000
+10111101
+10111101
+00000000
+11111011
+>
+00000000
+11101111
+11101111
+00000000
+10111101
+10111101
+00000000
+11111011
+NAME Interior Block
+WAL true
 
 SPR A
 00011000
@@ -405,8 +479,6 @@ SPR A
 00111100
 01100110
 POS 0 4,4
-ITM 0 1
-ITM 1 1
 
 SPR a
 00000000
@@ -747,16 +819,93 @@ SPR r
 NAME Crop 6
 POS 1 12,11
 
-ITM 0
+SPR s
+00000000
+00010000
+11111111
+11010001
+10010001
+10010000
+11111111
+10000000
+NAME Trunk_Left
+DLG o
+POS 0 6,2
+
+SPR t
+00000000
+00001000
+11111111
+10001011
+10001001
+00001001
+11111111
+00000001
+NAME Trunk_Right
+DLG p
+POS 0 7,2
+
+SPR u
 00000000
 00000000
 00000000
+00110000
+00110100
+00111000
+01110100
 00000000
-00000000
-00111110
-00100100
+NAME Old Boots
+DLG q
+POS 0 13,8
+
+SPR v
+11111111
+10000001
+10000001
+10000001
+10000001
+10000001
+10000001
+10000001
+NAME Bed 2 Bottom
+DLG r
+POS 0 13,12
+
+SPR w
+10000001
+10000001
+11111111
+11000011
+10000001
+10000001
+11000011
+11111111
+NAME Bed 2 Top
+POS 0 13,13
+
+SPR x
 00011000
+00111100
+00011000
+00011000
+01111110
+10111101
+10111101
+00100100
 >
+00111100
+00011000
+00011000
+01111110
+10111101
+10111101
+00100100
+00100100
+NAME Hosea
+DLG s
+POS 1 6,2
+
+ITM 0
 00000000
 00000000
 00000000
@@ -781,30 +930,6 @@ NAME key
 DLG 2
 BLIP 2
 
-ITM 2
-00011000
-00011000
-00011000
-00011000
-00011000
-00000000
-00011000
-00011000
-NAME Start the Day Icon
-DLG l
-
-ITM 3
-00011000
-00011000
-00011000
-00011000
-00011000
-00000000
-00011000
-00011000
-NAME Ending Icon
-DLG m
-
 ITM 4
 01111100
 10000010
@@ -816,6 +941,19 @@ ITM 4
 00010000
 NAME Saddlebag
 DLG n
+
+ITM 5
+00000000
+01110000
+01001000
+01001010
+01111100
+01111000
+01111000
+00110000
+NAME Watering Can
+DLG t
+BLIP 2
 
 DLG 0
 Mornin' Wilfred. {pg}Meow!{blip "1"}{pg}You ready to start the day?{pg}Meow!{blip "1"}{pg}Heheh, me too.
@@ -877,28 +1015,23 @@ Hmm y'all seem to be doing just fine.
 NAME Cow 3 dialog
 
 DLG e
-Looks like my crops are doin' well.
+"""
+This poor fella looks parched. Lemme get him some water.{pg}{
+  - {item "5"} < 1 ?
+    I have to find the watering can. {pg}
+  - else ?
+    There ya go. All nice n' watered. {pg}{end}You tended to the farm!
+}
+"""
 NAME Crops dialog
 
 DLG g
-Maybe I could hire a farmhand to do all this.
+This little fella looks alright.
 NAME Crop 4 dialog
 
 DLG h
 It beats starvin'.
 NAME Crop 5 dialog
-
-DLG j
-On to the next adventure...
-NAME Ending
-
-DLG l
-{wvy}Ahh.{/wvy}{pg}What a fine morning this is.{pg}Let's take a gander at my cows n' crops.
-NAME Start the Day Icon dialog
-
-DLG m
-
-NAME Ending Icon dialog
 
 DLG n
 """
@@ -906,6 +1039,30 @@ Ah, my saddlebag.{pg}I should get a new horse soon.{pg}Can't go nowhere without 
 {blip "2"}
 """
 NAME Satchel dialog 1
+
+DLG o
+I don't remember the last time I cleaned out this chest.
+NAME Trunk_Left dialog
+
+DLG p
+I don't remember the last time I cleaned out this chest.
+NAME Trunk_Right dialog
+
+DLG q
+Old boots from Pa. I remember the day he handed these to me like it was yesterday.{pg}They don't fit me no more but this is all I got left of him.{pg}I miss ya Pa. You crazy old coot you. 
+NAME Old Boots dialog
+
+DLG r
+I reckon Hosea is out and about already.{pg}He's always up before the roosters even start crowin'.
+NAME Bed 2 Bottom dialog
+
+DLG s
+Mornin' sleepyhead!{pg}Mornin' Hosea. {pg}Have trouble sleepin' last night?{pg}Nah, I slept just fine.{pg}Alrighty, if ya say so.{pg}Anyway, it's your turn to check on the crops and cattle today.{pg}Just give em' a look n' see if they need waterin' or some food to munch on.{pg}Okay, seems easy enough.{pg}It ain't hard at all.{pg}Heck, if I can do it, you can too.{pg}Now go on n' get ta work, cowboy.
+NAME Hosea dialog
+
+DLG t
+You picked up the watering can.
+NAME Watering Can dialog
 
 VAR a
 42
